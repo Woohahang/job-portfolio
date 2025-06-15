@@ -1,0 +1,43 @@
+.navbar {
+    width: 100%; /* 화면 가로 전체 너비 */
+    background-color: #333;
+    position: fixed; /* 화면에 고정 */
+    top: 0; /* 화면 최상단에 위치 */
+    left: 0; /* 화면 왼쪽 끝에 위치 */
+    z-index: 1000; /* 다른 요소 위에 표시 */
+
+    border: 1px dashed aqua;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: flex-end; /* 네비게이션 오른쪽 정렬 */
+
+    max-width: 1000px;
+    margin: 0 auto; /* 가운데 정렬 */
+    padding: 0 20px; /* 좌우 여백 */
+
+    border: 1px dashed blue;
+}
+
+.nav-links {
+    display: flex; /* 리스트 항목 가로로 나열 */
+    list-style: none; /* 기본 불릿(점) 제거 */
+
+    gap: 25px; /* 각 항목 간의 간격 */
+}
+
+.nav-links li a {
+    color: white; /* 텍스트 색상 */
+    text-decoration: none; /* 밑줄 제거 */
+    transition: color 0.3s ease; /* 부드러운 색상 전환 효과 */
+
+    font-weight: 500;         /* 살짝 굵게 (normal보다 한 단계 위) */
+    font-family: 'Segoe UI', 'Pretendard', Arial, sans-serif; /* 깔끔한 서체 */
+    letter-spacing: 0.3px;    /* 살짝 더 넓은 자간으로 가독성 향상 */
+
+}
+
+.nav-links li a:hover {
+    color: orange;
+}

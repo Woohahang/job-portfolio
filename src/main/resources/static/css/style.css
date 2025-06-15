@@ -1,0 +1,72 @@
+/* 전체 배경 색상 지정 */
+body {
+    background-color: #1A1A1E;
+    color: white; /* 텍스트 색상 */
+    margin: 0;
+    font-family: Arial, sans-serif; /* 글씨 채 */
+}
+
+main {
+    padding-top: 80px; /* 또는 navbar 높이만큼 */
+}
+
+.container {
+    max-width: 1000px; /* 너무 넓지 않게 제한 */
+    margin: 0 auto; /* 가운데 정렬 */
+    padding: 0 20px; /* 좌우 여백 */
+
+    border: 1px dashed wheat;
+}
+
+.profile-photo {
+    width: 130px;       /* 너비 조절 */
+    height: auto;       /* 비율 유지하면서 높이 자동 */
+    margin-top: 20px;    /* 위쪽 여백 */
+}
+
+.profile-contact-wrapper {
+    display: flex;
+    align-items: flex-start; /* 위쪽 정렬 */
+    gap: 32px;               /* 사진과 텍스트 간격 */
+    margin-top: 24px;
+    flex-wrap: wrap;         /* 모바일 대응 */
+
+    padding-right: 500px; /* 전체 컨테이너 오른쪽에 공간 추가 */
+}
+
+.contact-section {
+    flex: 1;                 /* 나머지 공간 차지 */
+}
+
+
+.contact-info {
+    display: grid;
+    row-gap: 8px;
+}
+
+.contact-info div {
+    display: grid;
+    grid-template-columns: 80px 1fr; /* 라벨은 고정폭, 내용은 남은 공간 차지 */
+    align-items: center;
+}
+
+.contact-info dt {
+    font-weight: bold;
+}
+
+.contact-info dd {
+    margin: 0;
+    color: white; /* 기본 흰색 */
+    line-height: 1.6;
+}
+
+.contact-info a {
+    color: white; /* 링크도 기본 흰색 */
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.contact-info a:hover {
+    color: #FFB74D; /* 호버 시 주황색 */
+    text-decoration: none;
+}
