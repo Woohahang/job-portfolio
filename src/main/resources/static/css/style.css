@@ -1,3 +1,7 @@
+/*html {*/
+/*    scroll-behavior: smooth;*/
+/*}*/
+
 /* 전체 배경 색상 지정 */
 body {
     background-color: #1A1A1E;
@@ -7,7 +11,7 @@ body {
 }
 
 main {
-    padding-top: 80px; /* 또는 navbar 높이만큼 */
+    padding-top: 60px; /* 또는 navbar 높이만큼 */
 }
 
 .container {
@@ -18,20 +22,22 @@ main {
     border: 1px dashed wheat;
 }
 
-.profile-photo {
-    width: 130px;       /* 너비 조절 */
-    height: auto;       /* 비율 유지하면서 높이 자동 */
-    margin-top: 20px;    /* 위쪽 여백 */
+h2 {
+    margin-top: 45px; /* 섹션 사이 간격 크게 */
+    font-size: 28px; /* 필요 시 폰트 크기도 조절 가능 */
 }
 
-.profile-contact-wrapper {
+.contact-wrapper {
     display: flex;
-    align-items: flex-start; /* 위쪽 정렬 */
+    align-items: center;
     gap: 32px;               /* 사진과 텍스트 간격 */
-    margin-top: 24px;
     flex-wrap: wrap;         /* 모바일 대응 */
+}
 
-    padding-right: 500px; /* 전체 컨테이너 오른쪽에 공간 추가 */
+.profile-photo {
+    width: 120px;       /* 너비 조절 */
+    height: auto;       /* 비율 유지하면서 높이 자동 */
+    flex-shrink: 0; /* 줄어들지 않도록 고정 */
 }
 
 .contact-section {
@@ -41,7 +47,7 @@ main {
 
 .contact-info {
     display: grid;
-    row-gap: 8px;
+    row-gap: 10px;
 }
 
 .contact-info div {
@@ -69,4 +75,25 @@ main {
 .contact-info a:hover {
     color: #FFB74D; /* 호버 시 주황색 */
     text-decoration: none;
+}
+
+.skills-info {
+    display: grid;
+    row-gap: 8px;
+}
+
+.skills-info div {
+    display: grid;
+    grid-template-columns: 150px 1fr; /* 라벨은 고정폭, 내용은 남은 공간 차지 */
+    align-items: center;
+}
+
+.skills-info dt {
+    font-weight: bold;
+}
+
+.skills-info dd {
+    margin: 0;
+    color: white; /* 기본 흰색 */
+    line-height: 1.6;
 }

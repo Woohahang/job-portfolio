@@ -13,81 +13,18 @@
 <main>
     <div class="container">
 
-        <section id="about-me" class="about-me">
-            <h2>About Me</h2>
-            <p>쉬운 구조와 명확한 주석으로 깔끔한 코드를 만드는</p>
-            <p>Wave를 개발한 백엔드 개발자 김현우입니다.</p>
+        <div th:replace="fragments/about-me :: aboutSection"></div>
 
+        <div th:replace="fragments/contact :: contactSection"></div>
 
-            <div class="profile-contact-wrapper">
-                <div class="contact-section">
-                    <h2>CONTACT</h2>
-                    <dl class="contact-info">
-                        <div>
-                            <dt>Phone</dt>
-                            <dd>010 2597 1726</dd>
-                        </div>
-                        <div>
-                            <dt>Email</dt>
-                            <dd><a href="mailto:glass1726@gmail.com">glass1726@gmail.com</a></dd>
-                        </div>
-                        <div>
-                            <dt>Github</dt>
-                            <dd><a href="https://github.com/Woohahang" target="_blank" rel="noopener noreferrer">https://github.com/Woohahang</a>
-                            </dd>
-                        </div>
-                        <div>
-                            <dt>Discord</dt>
-                            <dd><a href="https://discord.gg/JWvCakpdmP" target="_blank" rel="noopener noreferrer">Wave 디스코드 채널 바로가기</a></dd>
-                        </div>
-                    </dl>
-                </div>
+        <div th:replace="fragments/skills :: skillsSection"></div>
 
-                <img src="/images/woohahang-dev.jpg" alt="김현우 프로필 사진" class="profile-photo"/>
-            </div>
-        </section>
-
-        <br><br><br><br><br><br><br><br>
-
-        About Me 아래 Wave 란? 설명하고 버튼
-
-
-        <section id="hero" class="hero">
-            <h1>디스코드 자동화 봇, <span class="highlight">Wave</span> 개발자 포트폴리오</h1>
-
-            <h1>Wave 개발자 포트폴리오</h1>
-            <img src="/images/wave-voicechannel-embed.png" alt="유저 프로필">
-        </section>
-
-        <p>
-            음성 채널 참여자를 감지하고, 등록된 게임 닉네임을 자동으로 출력하는 Discord 봇입니다.
-        </p>
-
-
-        <p>
-            김현우 / Woohahang<br>
-            협업을 최우선으로 하며, 누구나 이해하기 쉬운 구조와 주석으로 깔끔한 코드를 만드는<br>
-            Wave 개발자이자 백엔드 개발자입니다.
-        </p>
-
-        <img src="/images/woohahang-dev.jpg" alt="프로필 사진" style="width: 150px; border-radius: 8px; margin: 20px 0;">
-
-        <section>
-            <h2>주요 사용 기술</h2>
-            <ul>
-                <li><strong>백엔드 개발:</strong> Java (Spring Boot), JavaScript (Node.js)</li>
-                <li><strong>데이터베이스:</strong> MongoDB (주 사용), MariaDB, Oracle</li>
-                <li><strong>API 연동:</strong> Riot Games API, Steam API, Discord OAuth2</li>
-                <li><strong>배포 및 인프라:</strong> AWS EC2, Docker</li>
-                <li><strong>버전 관리 및 협업:</strong> Git, GitHub Actions</li>
-            </ul>
-        </section>
+        <div th:replace="fragments/project-wave :: projectWaveSection"></div>
 
     </div>
-
 </main>
 
 <div th:replace="layout/footer :: footer"></div>
-
+<script src="/js/utils.js"></script>
 </body>
 </html>

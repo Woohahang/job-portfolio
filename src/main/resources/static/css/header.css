@@ -1,6 +1,6 @@
 .navbar {
     width: 100%; /* 화면 가로 전체 너비 */
-    background-color: #333;
+    background-color: #1A1A1E;
     position: fixed; /* 화면에 고정 */
     top: 0; /* 화면 최상단에 위치 */
     left: 0; /* 화면 왼쪽 끝에 위치 */
@@ -40,4 +40,12 @@
 
 .nav-links li a:hover {
     color: orange;
+}
+
+#about-me {
+    scroll-margin-top: 100px; /* 헤더 높이보다 살짝 여유 있게 */
+}
+
+#skills {
+    scroll-margin-top: 100px; /* 헤더 높이보다 살짝 여유 있게 */
 }
